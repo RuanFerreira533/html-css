@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-weight: bolder;
+    font-size: 4em;
+}
+section{
+    margin: auto;
+    text-align: center;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    margin-left: 25em;
+}
+li{
+    margin: auto 0.3em;
+}
+
+img#back{
+    width: 80px;
+}

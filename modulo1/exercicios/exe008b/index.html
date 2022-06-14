@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+
+    <style>
+        pre{
+            background-color: rgb(160, 150, 150);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte</h2>
+    <p>
+        O comando <code>document.getElementById('teste')</code>  é escrita em linguagem JavaScript.
+        <!--code => formatação de codigos-fonte, melhora a visualização.-->
+    </p>
+    <p>
+        Código em linguagem Python:
+        <pre> <!--pre => pre-formatação de codigos-fonte, considera todas as identações e espaços nele.-->
+            <code>
+                num = int(input(Digite um nnúmero: ))
+
+                if num % 2 == 0:
+                    print(f'O número {num} é par')
+                else:
+                    print('O número {num} é impar.')
+            </code>
+        </pre>
+    </p>
+    <h2>Citações simples</h2> 
+    <p>
+        Como diria o pai de um amigo: <q>O computador é um burro muito rápido.</q>
+        <!--q (quote)=> citação, com valor semântico.-->
+    </p>
+    <p>
+        <q>Eu sou o Homem de Ferro</q>, Tony Stark (no filme <em>O Homem de Ferro</em>)
+
+    </p>
+    <h2>Citações completas</h2>
+    <p>
+        <blockquote>
+            Se você não consegue explicar algo de forma simples, você não entendeu suficientemente bem.
+        </blockquote>, Albert Eisten
+    </p>
+    <p>
+        <blockquote>
+            Viver é como andar de bicicleta: É preciso estar em constante movimento para manter o equilíbrio.
+        </blockquote>, Albert Eisten
+        <!--blockquote => Citações maiores, com mais de 3 linhas.
+        cite => parametro da tag blockquote, recebe o link de referenria da citação, nada visual acontece, apenas valor semântico.-->
+    </p>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr>  e <abbr title="Cascate Style Sheet">CSS</abbr>.
+    <!--abbr => abriações.
+    title => parametro de abbr, recebe o nome por extenso do valor colocado na tag abbr e o exibe quando o mouse passar por cima.-->
+    </p>
+    <h2>Texto invertido</h2>
+    <p>
+        <bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo>
+        <!--bdo => inverto o texto
+        dir=> se recebe rtl, o texto aparece da direita para a esquerda, e se recebe lrt o texto normal.-->
+    </p>
+</body>
+</html>

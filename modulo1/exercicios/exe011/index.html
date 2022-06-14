@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente o tamanho do seu navegador.</p>
+    <picture>
+        <!--se o tamanho da tela for de até 700px deve ser carregada a imgem 'imagem_p', senão, ela sendo maior que 700px é carregada a imagem na próxima tag source, senão por padrão a da tag img-->
+        <!--obs.: aconselhável colocar um tamnho máximo maior que o da imagem, para evitar a barra horizontal.-->
+        <source media="(max-width: 750px)" srcset="imagens/imagem_p.png" type="image/png">
+        <!--o próximo source deve conter um max-width sempre maior-->
+        <source media="(max-width: 1050px)" srcset="imagens/imagem_m.png" type="image/png">
+        <img src="imagens/imagem_g.png" alt="imagem flexível">       
+    </picture>
+
+    
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <!--tag audio adiciona arquivos de áudio; controls, exibe os controles de áudio; auotplay, inicia o áudio automaticamentell-->
+    <!--Também é possível usar a tag source com áudio, com a mesma-->
+    <audio src="./midia/HunterXHunter-EpicSong.mp3" type="audio/" controls autoplay></audio>
+</body>
+</html>

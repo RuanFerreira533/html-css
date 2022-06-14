@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML5</title>
+</head>
+<body>
+    <h1>Iserindo vídeos hospedados no localhost</h1>
+    <p>Este vídeo está rodando no meu próprio servidor.</p>
+
+    <!--
+        tag video => insere vídeos;
+        parametro controls => exibe os controles de áudio e *reprodução do vídeo;
+        *parametro poster = adiciona uma imagem de 'capa'
+        *parametro width => largura do vídeo
+        *parametro loop => video em loop
+        
+        tag souce => mesmo uso do source na tag picture, caso o primeiro source não carregue o proximo é carregado, senão, o próximo...;
+    -->
+    
+    <video width="500" controls loop poster="../exe011/imagens/imagem_p.png">
+        <source src="./midia/Video-Ceu-Noturno.mp4" type="video/mp4">
+    </video>
+
+    <h1>Iserindo vídeos do YouTube</h1>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!--
+        Para achar e copiar o codigo em HTML, ir no vídeo no youtube e ...
+        youtube -> compartilhar -> incorporar -> copiar, depois cola no codigo do site.
+    -->
+</body>
+</html>
