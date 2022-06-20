@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tag</title>
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            text-align: justify;
+            background-color: rgb(241, 233, 233);
+        }
+
+        header{
+            margin: 0vh 2vw 10vh 0;
+        }
+
+        h1, h2, h3{   
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        header > h1{
+            margin-left: 2vw;
+        }
+
+        header > nav{
+            background-color: orange;
+            padding: 1vw;
+            width: 100%;
+        }
+
+        nav > a{
+            margin: auto 0.5vw;
+            text-decoration: none;
+        }
+
+        main > section{
+            padding-left: 2vw;
+        }
+
+        section#principal{
+            margin-bottom: 10vh;
+        }
+
+        section#assuntos{
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 10vh;
+            background-color: grey;
+        }    
+
+        section#assuntos > article{
+            width: 15vw;
+            height: 25vh;
+            margin: 5vw;
+            padding: 1em;
+            background-color: #aeadad;
+            border-radius: 10px;
+            box-shadow: 0.5em 0.5em 0.1em rgb(241, 233, 233);
+        }
+
+        section#assuntos > article:hover{
+            box-shadow: 0.5em 0.5em 0.1em rgba(241, 233, 233, 0.579);
+        }
+
+        footer{
+            margin-bottom: 0%;
+            height: 20vw;
+            padding-top: 20vh;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+
+        footer > span:hover{
+            border-bottom: 2px solid orange;
+        }
+
+        a:hover{
+            border-bottom: 2px solid black;
+        }
+
+        a:visited{
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Diário</a>
+            <a href="#">Esportes</a>
+            <a href="#">Cultura</a>
+            <a href="#">Tecnologias</a>
+        </nav>
+        <h1>Olá, bem-vindo ao meu Site!</h1>
+    </header>
+    <main>
+       <section id="principal">
+           <h1>
+            O que ver por aqui
+           </h1>
+           <p>
+            Este é um site de exemplo desenvoldido como um dos exercícios das aulas do Curso de HTML 5 e CSS 3 do Curso em Vídeo.
+           </p>
+           <p>
+               Este Site é um exemplo de <em>Grouping Tag</em> feito durante a aula 26 do módulo 2, e trabalhado ao longo das seguintes.
+           </p>
+       </section>
+       <section id="assuntos">
+        <article>
+            <h3>Esportes</h3>
+            <p>
+                Gosto de Futebol, muito, mas não só. As vezes vejo basquete. Vôlei parece interessante.
+            </p>
+        </article>
+        <article>
+            <h3>Tecnologia</h3>
+            <p>
+                Programação é muito legal... lógica, criação de soluções, aprender (e aprender, e aprender, ...)
+            </p>
+        </article>
+        <article>
+            <h3>Ciência</h3>
+            <p>
+                Ciência é demais! Estudar sempre é bom, principalmente quando voçê pode aplicá-lo de forma útil, para o mudar o mundo de muitas pessois!
+            </p>
+        </article>
+       </section>
+    </main>
+    <footer>
+        <span>por @gabrielcosmo</span> 
+    </footer>
+
+</body>
+</html>
