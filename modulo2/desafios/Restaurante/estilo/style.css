@@ -15,10 +15,13 @@
     --fonte3: 'Rubik' , cursive;
 }
 
-html, body {
+body {
     min-height: 100vh;
-    background-color: rgb(148, 148, 148);
+    background-image: url(../imagens/papel-amassado.jfif);
+    background-position: center center;
+    
 }
+
 /* HEADER-FACHADA */
 header {
     background-color: rgb(37, 37, 37);
@@ -47,6 +50,7 @@ nav > ul > li{
     padding: 0.5em 0.5em;
     border-start-start-radius: 10px;
     border-start-end-radius: 10px;
+    font-size: 1.5em;
 
 }
 
